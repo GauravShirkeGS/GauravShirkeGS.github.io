@@ -3,43 +3,521 @@
     box-sizing: border-box;
 }
 body{
-   
+    /* background-image: url("https://e0.pxfuel.com/wallpapers/698/662/desktop-wallpaper-company-launches-new-network-automation-portfolio-for-sps-connectivity.jpg" ) no-repeate center; */
+    /* background-size: cover; */
     /* padding: 0px; */
-    font-family:sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
-#navbar{
-    height: 60px;
-    border: 1px solid black;
-    margin: auto;
+.navbar{
+   
+    position: fixed;
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 100px;
+    z-index: 999;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
-    position:fixed;
+    /* padding: 30px 0; */
+    font-family: "Ubuntu", sans-serif;
     transition: all 0.3s ease;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-    transition-property: all;
+}
+nav{
+    display: block;
+}
+.navbar.sticky{
+    /* padding: 15px 0;*/
+    height: 80px;
+    background: #ff7458;
+    border-radius: 9px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-#navbar>h1{
-    margin-left: 30px;
+.navbar.sticky>h1,.navbar.sticky>div>button{
+    color: black;
 }
 
-#navbar>div{
-    margin-right: 20px;
-    width: 50%;
-    border: 1px solid red;
+.navbar>h1{
+    margin-left: 120px;
+    font-size: 37px;
+    font-weight: 600;
+    color: #ff7458;
+    font-family:  Arial, Helvetica, sans-serif ;
+}
+
+.navbar>div{
+    margin-right: 90px;
+    width: 40%;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-evenly;
 }
 
-#navbar>div>button{
-    border: none;
-   padding: 6px 20px;
-   font-size: large;
-   font-weight: bolder;
+.navbar>div>button{
+    /* border: 1px solid red; */
+   padding: 6px 18px;
+   font-size: 21px;
+   font-weight: 550;
+   color: white;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
    
+}
+.navbar>div>button:hover{
+    color: #ff7458;
+}
+.navbar.sticky>div>button:hover{
+    color: white;
+}
+#home{
+    /* width: 1520px; */
+    height: 710px;
+    /* box-sizing: border-box; */
+    /* object-fit: cover; */
+    
+    background: url("https://e0.pxfuel.com/wallpapers/698/662/desktop-wallpaper-company-launches-new-network-automation-portfolio-for-sps-connectivity.jpg" ) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    /* background-clip: border-box; */
+    margin: auto;
+    /* border:  1px solid green; */
+    position: relative;
+}
+#self{
+    width: fit-content;
+    /* height: 400px; */
+    height: fit-content;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+     /* border: 1px solid red; */
+     margin-left: 240px;
+     color: white;
+     padding: 6px;
+     line-height: 70px;
+}
+
+.button{
+    padding: 14px 36px;
+    font-size: 22px;
+    color: white;
+    background-color: #ff7458;
+    font-weight: 500;
+    border-top-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    cursor: pointer;
+    border: black 2px solid;
+    margin-top: 25px;
+}
+
+.button:hover{
+    color: #ff7458;
+    border: #ff7458 2px solid;
+    background-color: transparent;
+    /* font-weight:bold; */
+    /* font-size: 24px; */
+    /* font-stretch: expanded; */
+
+}
+
+#about{
+    /* width: 1520px; */
+    height: 670px;
+    background-image: url("https://img.freepik.com/premium-photo/abstract-white-background-with-smooth-wavy-lines-your-project_476363-6152.jpg?w=1060");
+    background-size: cover;
+    background-attachment: fixed;
+    margin: auto;
+    position: relative;
+}
+
+#about>div>img{
+    width: 280px;
+    height: 300px;
+    border-top-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+}
+
+#about>p{
+    text-align: center;
+    width: 14%;
+    margin: auto;
+    font-size: 32px;
+    font-weight: 400;
+    /* text-decoration: underline; */
+    border-bottom-style: dashed;
+    padding-bottom: 14px;
+    padding-top: 90px;
+    font-weight: 700;
+}
+.typing{
+    color: #ff7458;
+}
+
+#ab_in{
+    display: flex;
+    flex: 1 2 400px;
+    gap: 50px;
+    width: 75%;
+    height: 350px;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 170px;
+    margin-top: 60px;
+    border: 3px solid transparent;
+    position: absolute;
+    top: 50%;
+   -ms-transform: translateY(-50%);
+   transform: translateY(-50%);
+
+}
+#info{
+    width: 60%;
+    /* border: 1px solid;    */
+    height: 240px;
+    line-height: 24px;
+}
+#info>p{
+margin-top: 37px; 
+font-size: 17px;
+line-height: 23px;
+text-align: justify;
+width: 90%;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+#ab_in:hover{
+    border: 3px solid #ff7458;
+    border-top-left-radius: 34px;
+    border-bottom-right-radius: 34px;
+
+}
+
+#skills{
+    /* width: 1520px; */
+    height: 710px;
+    background-color: #022142;
+    margin: auto;
+}
+
+#title{
+    text-align: center;
+    width: 14%;
+    margin: auto;
+    font-size: 32px;
+    font-weight: 400;
+    /* text-decoration: underline; */
+    border-bottom-style: dashed;
+    padding-bottom: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+#skills>div{
+    width: 80%;
+    /* border: 1px solid; */
+    margin: auto;
+    display: grid;
+     gap: 80px;
+    margin-top: 120px;
+    grid-template-columns:repeat(4,1fr);
+}
+
+#skills>div>img{
+    width: 170px;
+    height: 140px;
+    background-color: white;
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+} 
+
+#skills>div>img:hover{
+    /* width: 150px; */
+    /* height: 120px; */
+    box-shadow: #5877ff 5px 8px 15px;
+    /* border:3px solid #ff7458; */
+    border-top: 3px solid #ff7458;
+    border-left: 3px solid #ff7458;
+}
+
+#project{
+    /* width: 1520px; */
+    height: 740px;
+    /* background-color: rgb(249, 234, 245); */
+  background-image: url("https://img.freepik.com/premium-photo/abstract-white-background-with-smooth-wavy-lines-your-project_476363-6152.jpg?w=1060");
+  background-size: cover;
+  background-attachment: fixed;
+    margin: auto;
+}
+
+#container{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    gap: 45px;
+   text-align: center;
+   margin-top: 50px;
+
+}
+
+#container>div{
+    margin: auto;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    width: 30%;
+    height: 530px;
+    padding: 15px 0px;
+    background-color: rgb(238, 242, 251);
+    flex-direction: column;
+    border-top-left-radius: 32px;
+    border-bottom-right-radius: 32px;
+    border: none;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+    /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
+}
+#container>div>img{
+    width: 230px;
+    height: 200px;
+    margin: 20px 0px;
+    border-top-left-radius: 22px;
+    border-bottom-right-radius: 22px;
+    border-right: 3px solid #ff7458;
+    border-bottom: 3px solid #ff7458;
+}
+#container>div>div{
+    display: flex;
+    /* border: 1px solid red; */
+    width: 80%;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+#container>div>img+p{
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+#container>div>img+p+p{
+    width: 78%;
+    height: 90px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#container>div>img+p+p+p{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.pro{
+    padding: 12px 25px;
+    font-size: 17px;
+    font-weight: 600;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    /* color: black; */
+    /* background-color: rgb(238, 242, 251); */
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#container>div:hover{
+    background-color: #ff7458;
+    /* padding: 0px 0px; */
+    color: rgb(238, 242, 251);
+    background-color: #ff7458;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.pro:hover{
+    background-color: #ff7458;
+    color: rgb(238, 242, 251);
+    border: 1px solid rgb(238, 242, 251);
+}
+
+#container>div>img:hover{
+    border-right: 3px solid rgb(238, 242, 251);
+    border-bottom: 3px solid rgb(238, 242, 251);
+}
+
+#contact{
+    /* width: 1520px; */
+    height: 700px;
+    background-color: #022142;
+    margin: auto;
+}
+
+#con-container{
+    width: 86%;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    /* border: 1px solid white; */
+    justify-content: center;
+    margin-top: 50px;
+}
+
+#con-container>div{
+    width: 45%;
+    /* border: 1px solid red; */
+}
+#con-container>div>p:first-child{
+    font-size: 23px;
+    font-weight: 500;
+    margin: 15px 0px;
+}
+.con_icons{
+    margin: 30px 0px;
+    height: 350px;
+    /* border: 1px solid yellow; */
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+
+    gap: 60px;
+}
+.con_icons>div{
+    width: 45%;
+display: flex;
+/* border: 1px solid peru; */
+align-items: center;
+/* font-size: 22px; */
+}
+
+.con_icons>div>a{
+    color: white;
+    text-decoration: none;
+}
+.con_icons>div i{
+    font-size: 28px;
+    color: #ff7458;
+}
+.space{
+    margin-left: 40px;
+    font-size: 20px;
+}
+.grid{
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4, 30px);
+    gap: 45px;
+    margin-top: 50px;
+}
+.grid>input{
+    height: 50px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding-left: 15px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: #022142;
+    border: 3px solid #ff7458;
+   outline: none;
+}
+.grid>textarea{
+    height: 78px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    resize: none;
+    padding: 13px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    color: white;
+    background-color: #022142 ;
+    border: 3px solid #ff7458;
+    outline: none;
+}
+.a{
+    /* grid-column: 1/span 2; */
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+::placeholder{
+    color: #ffffff;
+}
+
+.grid+button{
+    padding: 14px 35px;
+    /* margin-top: 50px; */
+}
+
+     /* small screen  */
+
+
+
+          /* <-----------------------------       media query for tab ---------------------------------->   */
+
+
+
+@media all and (min-width:820px) and (max-width:1180px){
+
+ #home{
+    background-size: 100% 100%;
+    /* width: 1000px; */
+    /* border: 5px solid purple; */
+ }
+
+  .navbar{
+    width: 100%;
+    justify-content: space-between;
+  }
+
+    .navbar>h1{
+        margin-left: 50px;
+        font-size: 34px;
+        border: 1px solid white;
+        font-weight: 600;
+        color: #ff7458;
+        font-family:  Arial, Helvetica, sans-serif ;
+    }
+    
+    .navbar>div{
+        margin-right: 90px;
+        width: 30%;
+        border: 1px solid white;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    
+.navbar>div>button{
+    /* border: 1px solid red; */
+   padding: 5px 12px;
+   font-size: 19px;
+   font-weight: 550;
+   color: white;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   
+}
+
+#self{
+    
+}
+
+
+#ab_in{
+  
+}
+
 }
