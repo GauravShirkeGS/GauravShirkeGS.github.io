@@ -12,13 +12,14 @@
 
     <nav class="navbar">
         <h1>Gaurav Shirke</h1>
+        <i onclick="bars()" class="fa-solid fa-bars"></i>
         <div>
             <button onclick="home()">Home</button>
             <button onclick="about()">About</button>
             <button onclick="skill()">Skill</button>
             <button onclick="project()">Project</button>
             <button onclick="contact()">Contact</button>
-            <button >Resume</button>
+            <button onclick="resume()"  >Resume</button>
         </div>
     </nav>
 
@@ -27,7 +28,7 @@
        <div id="self">
         <p style="font-size: 27px; font-weight: lighter; ">Hello, I am </p>
         <p style="font-size: 60px; font-weight: 510;">Java Developer</p>
-        <button class="button">Resume</button>
+        <a class="button"  target="_blank" href="https://drive.google.com/file/d/1Nfb2VY46aoj-LEs_8s7z7OEdXuR7_0T7/view?usp=sharing" download="jhgasd78">Resume</a> 
        </div>
         
     </div>
@@ -56,7 +57,7 @@
  </div>
 
 <div id="skills">
-    <p id="title" style="padding-top: 80px;">My Skills</p>
+    <p id="title" style="padding-top: 90px;" >My Skills</p>
     <div>
       <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="">
       <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" alt="">
@@ -74,37 +75,43 @@
     <div id="container">
         <div>
             <img src="https://i.ibb.co/dLL8VFJ/Screenshot-73.png" alt="Screenshot-73" border="0">
-            <p>Go Shop</p>
+            <div class="pro_info">
+            <h3>Go Shop</h3>
             <p>This project is clone of Relience Digital website. This is ecomerce website where you can buy electronic
                 products, Mobile phones and Home appliences. collaborative project of 4 membered team</p>
-            <p>TechStack: <i>JavaScript, HTML, CSS</i> </p>
+            <p><b> TechStack:</b> <i>JavaScript, HTML, CSS</i> </p>
             <div>
-                <a href="https://github.com/GauravShirkeGS/ordinary-finger-7814"><div class="pro">Git Repo</div></a>
-                <a href="https://ubiquitous-semolina-4f8038.netlify.app/"><div class="pro">Live Site</div></a>
+                <a target="_blank" href="https://github.com/GauravShirkeGS/ordinary-finger-7814"><div class="pro">Git Repo</div></a>
+                <a target="_blank" href="https://ubiquitous-semolina-4f8038.netlify.app/"><div class="pro">Live Site</div></a>
             </div>
+        </div>
         </div>
         <div>
             <img src="https://i.ibb.co/7kxwMYL/orbitz-project.png" alt="orbitz-project" border="0">
-            <p>Orbitz clone</p>
+            <div  class="pro_info">
+            <h3>Orbitz clone</h3>
             <p>This is Tours and Travelles ecommerce website where you can book hotels, rent cars, flyight tickets etc.
                Individual project completed in span of 6 days.</p>
-            <p>TechStack: <i>JavaScript, HTML, CSS</i></p>
+            <p><b> TechStack:</b> <i>JavaScript, HTML, CSS</i></p>
             <div>
-                <a href="https://github.com/GauravShirkeGS/meaty-desire-2185"><div class="pro">Git Repo</div></a>
-                <a href="https://glistening-biscuit-f379fe.netlify.app/web_101_project.html"><div class="pro">Live Site</div></a>
+                <a target="_blank" href="https://github.com/GauravShirkeGS/meaty-desire-2185"><div class="pro">Git Repo</div></a>
+                <a target="_blank" href="https://glistening-biscuit-f379fe.netlify.app/web_101_project.html"><div class="pro">Live Site</div></a>
             </div>
+           </div>
         </div>
         <div>
             <img src="https://i.ibb.co/YhD66Jz/Screenshot-75.png" alt="Screenshot-75" border="0">
-            <p>TenderSet</p>
+            <div  class="pro_info">
+            <h3>TenderSet</h3>
             <p>This is Tender Management System Application Where you can login as Administrator or vendor.
                 This application store all tender information, vendor data safe and easily retrival manner.
             </p>
-            <p>TechStack: <i>Java, MySQL, jdbc</i></p>
+            <p> <b> TechStack:</b> <i>Java, MySQL, jdbc</i></p>
             <div>
-                <a href="https://github.com/GauravShirkeGS/murky-boundary-2383"><div class="pro">Git Repo</div></a>
-               <a href=""><div class="pro">Live Site</div></a> 
+                <a target="_blank" href="https://github.com/GauravShirkeGS/murky-boundary-2383"><div class="pro">Git Repo</div></a>
+               <a target="_blank" href=""><div class="pro">Live Site</div></a> 
             </div>
+        </div>
         </div>
 
     </div>
@@ -118,7 +125,7 @@
 
    <div id="con-container">  
 
-    <div id="con_detailes">
+    <div class="links">
       <p>Get in touch</p>
       <p style="line-height: 20px;">You can reach me through below contacts. You have any work where I can add some value and help you in any way then please do contact me.</p>
       
@@ -144,7 +151,7 @@
         
        </div>
 
-       <div>
+       <div class="last_div">
         <i class="fa-solid fa-phone"></i>
 
         <div class="space">+91 9588693140</div>
