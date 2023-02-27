@@ -138,12 +138,14 @@ nav{
 
 #about{
     /* width: 1520px; */
-    height: 670px;
+    height: fit-content;
     background-image: url("https://img.freepik.com/premium-photo/abstract-white-background-with-smooth-wavy-lines-your-project_476363-6152.jpg?w=1060");
     background-size: cover;
     background-attachment: fixed;
     margin: auto;
     position: relative;
+    padding-bottom: 40px;
+
 }
 
 #about>div>img{
@@ -151,6 +153,7 @@ nav{
     height: 300px;
     border-top-left-radius: 34px;
     border-bottom-right-radius: 34px;
+  
 }
 
 #about>p{
@@ -174,17 +177,19 @@ nav{
     flex: 1 2 400px;
     gap: 50px;
     width: 75%;
-    height: 350px;
+    /* height: 350px; */
     margin: auto;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 170px;
+    margin-top: 60px;
+    padding: 15px 0px;
+    /* margin-left: 170px;
     margin-top: 60px;
     border: 3px solid transparent;
     position: absolute;
     top: 50%;
    -ms-transform: translateY(-50%);
-   transform: translateY(-50%);
+   transform: translateY(-50%); */
 
 }
 #info{
@@ -597,9 +602,9 @@ align-items: center;
 }
 
 
-@media all and (min-width:380px) and (max-width:820px){
+@media all and (min-width:280px) and (max-width:820px){
 
-
+/* 340 */
     #about{
         width: 400px;
         height: 850px;
@@ -613,7 +618,7 @@ align-items: center;
         display: flex;
         flex-direction: column;
         margin:auto;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     margin-top: 80px;
     margin-left: 20px;
       
@@ -628,7 +633,7 @@ align-items: center;
 
     #title{
         width: fit-content;
-        border: 2px solid red;
+        /* border: 2px solid red; */
         
     }
 
@@ -639,7 +644,7 @@ align-items: center;
 
     #info>h2{
         font-size: 20px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-left: 40px;
         width: 196px;
     }
@@ -651,7 +656,7 @@ align-items: center;
 
     #info>p{
         width: 280px;
-        border: 1px solid red;
+        /* border: 1px solid red; */
     }
 
 /* ================ skills ======================0 */
@@ -664,7 +669,7 @@ align-items: center;
 #skills>div{
     display: grid;
     gap: 30px;
-border: 1px solid red;
+/* border: 1px solid red; */
    grid-template-columns:repeat(2,1fr);
    margin-bottom: 220px;
 }
@@ -696,14 +701,14 @@ margin-right: 20px;
 
 .pro_info{
     margin-right: 20px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 250px;
     height: 330px;
 }
 
 
 .pro_info>p{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
 }
 
@@ -716,7 +721,7 @@ margin-right: 20px;
     font-weight: 600;
     border-top-left-radius: 8px;
     border-bottom-right-radius: 8px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
@@ -736,11 +741,11 @@ margin-right: 20px;
 
 #con-container>div{
     width: 95%;
- border: 1px solid red;
+ /* border: 1px solid red; */
 }
 
 .con_icons{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin-top: 20px;
 }
 
