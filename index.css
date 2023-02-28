@@ -15,17 +15,178 @@ html {
     scroll-behavior: smooth;
   }
 
+  /* ======================= drop down ================== */
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+  *{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    background: #f2f2f2;
+  }
+  nav{
+    background: #222;
+    /* position: sticky; */
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+  nav:after{
+    content: '';
+    clear: both;
+    position: fixed;
+    display: table;
+  }
+  nav .logo{
+    float: left;
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+  }
+  nav ul{
+    float: right;
+    margin-right: 40px;
+    list-style: none;
+    position: relative;
+  }
+  nav ul li {
+    float: left;
+    display: inline-block;
+    background: #222;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  nav ul li a:hover{
+    color: crimson;
+  }
+  nav ul ul{
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -60px;
+    left: 150px;
+  }
+  .show,.icon,input{
+    display: none;
+  }
+  .fa-plus{
+    font-size: 15px;
+    margin-left: 40px;
+  }
+  @media all and (max-width: 968px) {
+    nav ul{
+      margin-right: 0px;
+      float: left;
+    }
+    nav .logo{
+      padding-left: 30px;
+      width: 100%;
+    }
+    .show + a, ul{
+      display: none;
+    }
+    nav ul li,nav ul ul li{
+      display: block;
+      width: 100%;
+    }
+    .show{
+      display: block;
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase;
+      padding: 0 20px;
+      line-height: 70px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .show:hover{
+      color: crimson;
+    }
+    .icon{
+      display: block;
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 40px;
+      line-height: 70px;
+      cursor: pointer;
+      font-size: 25px;
+    }
+    nav ul ul{
+      top: 70px;
+      border-top: 0px;
+      float: none;
+      position: static;
+      display: none;
+      opacity: 1;
+      visibility: visible;
+    }
+    nav ul ul a{
+      padding-left: 40px;
+    }
+    nav ul ul ul a{
+      padding-left: 80px;
+    }
+    nav ul ul ul li{
+      position: static;
+    }
+    [id^=btn]:checked + ul{
+      display: block;
+    }
+    nav ul ul li{
+      border-bottom: 0px;
+    }
+  }
+   
+
+/*
+
 .navbar{
    
     position: fixed;
-    /* border: 1px solid red; */
+  
     width: 100%;
     height: 100px;
     z-index: 999;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* padding: 30px 0; */
+   
     font-family: "Ubuntu", sans-serif;
     transition: all 0.3s ease;
 }
@@ -33,7 +194,7 @@ nav{
     display: block;
 }
 .navbar.sticky{
-    /* padding: 15px 0;*/
+    
     height: 80px;
     background: #ff7458;
     border-radius: 9px;
@@ -46,8 +207,10 @@ nav{
 
 .navbar>h1{
     margin-left: 120px;
-    font-size: 37px;
+    width: 380px;
+    font-size: 32px;
     font-weight: 600;
+
     color: #ff7458;
     font-family:  Arial, Helvetica, sans-serif ;
 }
@@ -61,13 +224,14 @@ nav{
 .navbar>div{
     margin-right: 90px;
     width: 40%;
-    /* border: 1px solid red; */
+   
     display: flex;
     justify-content: space-evenly;
 }
 
 .navbar>div>button{
-    /* border: 1px solid red; */
+   
+    
    padding: 6px 18px;
    font-size: 21px;
    font-weight: 550;
@@ -83,6 +247,8 @@ nav{
 .navbar.sticky>div>button:hover{
     color: white;
 }
+*/
+
 #home{
     /* width: 1520px; */
     height: 710px;
@@ -492,7 +658,7 @@ align-items: center;
 
 
 
-@media all and (min-width:820px) and (max-width:1180px){
+@media all and (min-width:600px) and (max-width:820px){
 
  #home{
    
@@ -602,11 +768,12 @@ align-items: center;
 }
 
 
-@media all and (min-width:280px) and (max-width:820px){
+@media all and (min-width:352px) and (max-width:600px){
 
 /* 340 */
     #about{
-        width: 400px;
+        /* width: 400px; */
+        width: 100%;
         height: 850px;
         
     }
@@ -663,6 +830,7 @@ align-items: center;
 
 #skills{
     height: 800px;
+    width: 100%;
 }
 
 
