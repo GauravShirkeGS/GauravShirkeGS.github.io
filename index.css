@@ -135,7 +135,7 @@ html {
     nav ul{
       margin-right: 0px;
       float: left;
-      background-color: transparent;
+      background-color: rgb(31, 178, 226);
     }
     .navbar.sticky ul{
         background: #ff7458;
@@ -174,6 +174,9 @@ html {
       line-height: 70px;
       cursor: pointer;
       font-size: 25px;
+    }
+    .navbar.sticky>.icon{
+        color: black;
     }
     nav ul ul{
       top: 70px;
@@ -214,80 +217,6 @@ html {
   }
    
 
-/*
-
-.navbar{
-   
-    position: fixed;
-  
-    width: 100%;
-    height: 100px;
-    z-index: 999;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   
-    font-family: "Ubuntu", sans-serif;
-    transition: all 0.3s ease;
-}
-nav{
-    display: block;
-}
-.navbar.sticky{
-    
-    height: 80px;
-    background: #ff7458;
-    border-radius: 9px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-.navbar.sticky>h1,.navbar.sticky>div>button{
-    color: black;
-}
-
-.navbar>h1{
-    margin-left: 120px;
-    width: 380px;
-    font-size: 32px;
-    font-weight: 600;
-
-    color: #ff7458;
-    font-family:  Arial, Helvetica, sans-serif ;
-}
-
-.navbar>h1+i{
-    color: #ff7458;
-    font-size: 30px;
-    cursor: pointer;
-}
-
-.navbar>div{
-    margin-right: 90px;
-    width: 40%;
-   
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.navbar>div>button{
-   
-    
-   padding: 6px 18px;
-   font-size: 21px;
-   font-weight: 550;
-   color: white;
-   background-color: transparent;
-   border: none;
-   cursor: pointer;
-   
-}
-.navbar>div>button:hover{
-    color: #ff7458;
-}
-.navbar.sticky>div>button:hover{
-    color: white;
-}
-*/
 
 #home{
     /* width: 1520px; */
@@ -963,7 +892,7 @@ align-items: center;
 #skills{
     /* height: 800px; */
     width: 100%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
