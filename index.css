@@ -56,7 +56,8 @@ html {
     font-size: 25px;
     font-weight: 600;
     line-height: 70px;
-    padding-left: 60px;
+    padding-left: 50px;
+    /* background-color: red; */
   }
 
   .navbar.sticky>div{
@@ -64,9 +65,11 @@ html {
   }
   nav ul{
     float: right;
-    margin-right: 40px;
+    margin-right: 20px;
     list-style: none;
     position: relative;
+
+    /* background-color: yellow; */
   }
   nav ul li {
     float: left;
@@ -491,6 +494,9 @@ font-family: Arial, Helvetica, sans-serif;
     background-attachment: fixed;
     padding-bottom: 50px;
 }
+#calenderimg{
+    display: none;
+}
 .calendar{
     padding-top: 50px;
     /* padding-bottom: 130px; */
@@ -861,7 +867,7 @@ align-items: center;
 }
 
 
-@media all and (min-width:352px) and (max-width:600px){
+@media all and (min-width:280px) and (max-width:600px){
 
 /* 340 */
 
@@ -891,23 +897,36 @@ align-items: center;
     .cal{
         display: none;
     }
+    
+    #titlt{
+        font-size: 25px;
+    }
+
+    #calenderimg{
+        display: block;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+    }
 
     #ab_in{
      height: 650px;
      width: 90%;
         display: flex;
         flex-direction: column;
+        gap: 20px;
         margin:auto;
+        margin-top: 50px;
         /* border: 1px solid red; */
-    margin-top: 80px;
-    margin-left: 20px;
+    /* margin-top: 80px;
+    margin-left: 20px; */
       
     }
 
     #about>div>img{
-        width: 150px;
-        height: 180px;
-        margin-top: 30px;
+        width: 140px;
+        height: 170px;
+        /* margin-top: 30px; */
         
     }
 
@@ -923,27 +942,28 @@ align-items: center;
     }
 
     #info>h2{
-        font-size: 20px;
-        /* border: 1px solid red; */
-        margin-left: 40px;
-        width: 196px;
+       
     }
 
     #info{
-        margin-right: 60px;
-        margin-bottom: 150px;
+       text-align: center;
+        margin: auto;
+        width: 95%;
+        /* border: 1px solid red; */
+        margin-top: 10px;
     }
 
     #info>p{
-        width: 280px;
+        width: 100%;
         /* border: 1px solid red; */
     }
 
 /* ================ skills ======================0 */
 
 #skills{
-    height: 800px;
+    /* height: 800px; */
     width: 100%;
+    border: 1px solid red;
 }
 
 
@@ -952,14 +972,14 @@ align-items: center;
     gap: 30px;
 /* border: 1px solid red; */
    grid-template-columns:repeat(2,1fr);
-  
+  margin-top: 40px;
 }
 
 #skills>div>img{
-    width: 130px;
-    height: 90px;
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+    width: 80px;
+    height: 80px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
 }
 
 #skills>div>div>img{
@@ -982,7 +1002,7 @@ align-items: center;
 
 #container>div{
     flex-direction: column;
-    width: 85%;
+    width: 95%;
 height: fit-content;
     
 }
@@ -1004,7 +1024,7 @@ margin-right: 20px;
 
 .pro_info>p{
     /* border: 1px solid red; */
-    width: 90%;
+    width: 80%;
 }
 
 
@@ -1052,10 +1072,7 @@ margin-right: 20px;
     margin: 0px;
     
 }
-.space{
-    /* background-color: red; */
-    /* padding-right: 20px; */
-}
+
 .con_icons>div{
     width: 80%;
 }
