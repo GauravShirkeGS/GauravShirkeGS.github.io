@@ -393,6 +393,7 @@ font-family: Arial, Helvetica, sans-serif;
     grid-template-columns:repeat(4,1fr);
 }
 
+
 #skills>div>img,#skills>div>div>img{
     width: 80%;
     height: 80%;
@@ -898,6 +899,7 @@ align-items: center;
 #skills{
     /* height: 800px; */
     width: 100%;
+    margin: auto;
     /* border: 1px solid red; */
 }
 
@@ -906,6 +908,8 @@ align-items: center;
     display: grid;
     gap: 30px;
     margin: auto;
+
+    justify-items: center;
 /* border: 1px solid red; */
    grid-template-columns:repeat(2,1fr);
   margin-top: 40px;
