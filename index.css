@@ -16,24 +16,33 @@ html {
   }
 
   /* ======================= drop down ================== */
-  @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,600,700&display=swap');
   *{
     margin: 0;
     padding: 0;
     user-select: none;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Ubuntu", sans-serif;
   }
   body{
     background: #f2f2f2;
   }
   nav{
-    background: #222;
+    background: transparent;
     /* position: sticky; */
     width: 100%;
     position: fixed;
     z-index: 1;
   }
+
+  .navbar.sticky{
+    
+    height: 80px;
+    background: #ff7458;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
   nav:after{
     content: '';
     clear: both;
@@ -49,6 +58,10 @@ html {
     line-height: 70px;
     padding-left: 60px;
   }
+
+  .navbar.sticky>div{
+    color: black;
+  }
   nav ul{
     float: right;
     margin-right: 40px;
@@ -58,20 +71,27 @@ html {
   nav ul li {
     float: left;
     display: inline-block;
-    background: #222;
+    background: transparent;
     margin: 0 5px;
   }
   nav ul li a{
     color: white;
     line-height: 70px;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 19px;
     padding: 8px 15px;
     text-transform: uppercase;
     font-weight: 600;
   }
+  .navbar.sticky>ul>li>a,.navbar.sticky>ul>li>label>a{
+    color: black;
+    font-size: 19px;
+  }
+  .navbar.sticky>ul>li>a:hover,.navbar.sticky>ul>li:hover{
+    color: white;
+  }
   nav ul li a:hover{
-    color: crimson;
+    color: #ff7458;
   }
   nav ul ul{
     position: absolute;
@@ -101,7 +121,7 @@ html {
     top: -60px;
     left: 150px;
   }
-  .show,.icon,input{
+  .show,.icon,.input{
     display: none;
   }
   .fa-plus{
@@ -112,6 +132,10 @@ html {
     nav ul{
       margin-right: 0px;
       float: left;
+      background-color: transparent;
+    }
+    .navbar.sticky ul{
+        background: #ff7458;
     }
     nav .logo{
       padding-left: 30px;
@@ -127,6 +151,7 @@ html {
     .show{
       display: block;
       color: white;
+      
       font-size: 18px;
       text-transform: uppercase;
       padding: 0 20px;
@@ -170,6 +195,18 @@ html {
     }
     nav ul ul li{
       border-bottom: 0px;
+    }
+
+    .git-stats{
+        display: flex;
+        flex-direction: column;
+    
+        margin-top: 20px;
+        gap: 20px;
+    }
+    .git-stats img{
+        width: 65%;
+        margin: auto;
     }
   }
    
@@ -278,6 +315,16 @@ nav{
      padding: 6px;
      line-height: 70px;
 }
+ 
+.p1{
+    font-size: 27px;
+    font-weight: lighter;
+}
+
+.p2{
+    font-size: 60px;
+    font-weight: 510;
+}
 
 .button{
     padding: 14px 36px;
@@ -315,7 +362,7 @@ nav{
 }
 
 #about>div>img{
-    width: 280px;
+    width: 260px;
     height: 300px;
     border-top-left-radius: 34px;
     border-bottom-right-radius: 34px;
@@ -349,6 +396,7 @@ nav{
     align-items: center;
     margin-top: 60px;
     padding: 15px 0px;
+    border: 3px solid transparent;
     /* margin-left: 170px;
     margin-top: 60px;
     border: 3px solid transparent;
@@ -398,6 +446,7 @@ font-family: Arial, Helvetica, sans-serif;
     border-bottom-style: dashed;
     padding-bottom: 14px;
     padding-top: 90px;
+
     font-weight: 700;
     color: white;
 }
@@ -412,7 +461,7 @@ font-family: Arial, Helvetica, sans-serif;
     grid-template-columns:repeat(4,1fr);
 }
 
-#skills>div>img{
+#skills>div>img,#skills>div>div>img{
     width: 170px;
     height: 140px;
     background-color: white;
@@ -420,7 +469,12 @@ font-family: Arial, Helvetica, sans-serif;
     border-bottom-right-radius: 32px;
 } 
 
-#skills>div>img:hover{
+#tools_icon>div{
+    text-align: center;
+    color: white;
+}
+
+#skills>div>img:hover,#skills>div>div>img:hover{
     /* width: 150px; */
     /* height: 120px; */
     box-shadow: #5877ff 5px 8px 15px;
@@ -428,6 +482,33 @@ font-family: Arial, Helvetica, sans-serif;
     border-top: 3px solid #ff7458;
     border-left: 3px solid #ff7458;
 }
+
+/* ====================== stats git ============================= */
+#statistics{
+    text-align: center;
+    background-image: url("https://wallpaperaccess.com/full/1301126.png");
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 50px;
+}
+.calendar{
+    padding-top: 50px;
+    /* padding-bottom: 130px; */
+    /* border: 1px solid red; */
+ 
+    color: white;
+}
+.git_hub_stats_section{
+    margin-top: 0%;
+  }
+  
+  .git-stats{
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+
+
 
 #project{
     /* width: 1520px; */
@@ -599,6 +680,12 @@ align-items: center;
 .space{
     margin-left: 40px;
     font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* justify-items: center; */
+    /* width: 350px; */
+    margin: auto;
 }
 .grid{
     display: grid;
@@ -608,7 +695,7 @@ align-items: center;
     gap: 45px;
     margin-top: 50px;
 }
-.grid>input{
+.grid input{
     height: 50px;
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
@@ -617,6 +704,7 @@ align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 300;
     color: white;
+
     background-color: #022142;
     border: 3px solid #ff7458;
    outline: none;
@@ -727,6 +815,9 @@ align-items: center;
     margin-top: 160px;
     grid-template-columns:repeat(3,1fr);
 }
+#statistics{
+    width: 960px;
+}
 
 #container{
     /* border: 2px solid red; */
@@ -743,7 +834,9 @@ align-items: center;
     padding-left: 15px;
 }
 
-
+#contact{
+    padding-bottom: 100px;
+}
 
 #con-container{
     flex-direction: column;
@@ -771,6 +864,23 @@ align-items: center;
 @media all and (min-width:352px) and (max-width:600px){
 
 /* 340 */
+
+
+ #self{
+ 
+ /* border: 2px solid red; */
+ margin-left: 30px;
+ }
+
+  .p1{
+    font-size: 23px;
+  }
+
+  .p2{
+    font-size: 50px;
+  }
+
+
     #about{
         /* width: 400px; */
         width: 100%;
@@ -778,6 +888,9 @@ align-items: center;
         
     }
 
+    .cal{
+        display: none;
+    }
 
     #ab_in{
      height: 650px;
@@ -839,7 +952,7 @@ align-items: center;
     gap: 30px;
 /* border: 1px solid red; */
    grid-template-columns:repeat(2,1fr);
-   margin-bottom: 220px;
+  
 }
 
 #skills>div>img{
@@ -847,6 +960,20 @@ align-items: center;
     height: 90px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+}
+
+#skills>div>div>img{
+    width: 80px;
+    height: 80px;
+    border-top-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+#tools_icon {
+    /* background-color: red; */
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
 }
 
 
@@ -877,7 +1004,7 @@ margin-right: 20px;
 
 .pro_info>p{
     /* border: 1px solid red; */
-    width: 100%;
+    width: 90%;
 }
 
 
@@ -915,8 +1042,20 @@ margin-right: 20px;
 .con_icons{
     /* border: 1px solid white; */
     margin-top: 20px;
-}
 
+}
+#links>div>div{
+    background-color: #ff7458;
+    display: flex;
+    align-items: flex-start;
+    padding: 0px;
+    margin: 0px;
+    
+}
+.space{
+    /* background-color: red; */
+    /* padding-right: 20px; */
+}
 .con_icons>div{
     width: 80%;
 }
@@ -924,6 +1063,7 @@ margin-right: 20px;
 .grid{
     display: flex;
     flex-direction: column;
+
 }
 
 #msg{

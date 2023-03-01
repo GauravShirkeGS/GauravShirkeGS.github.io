@@ -43,92 +43,81 @@
         </div>
     </nav> -->
 
-    <nav>
-        <div class="logo">Coding Master</div>
- 
-        <label for="btn" class="icon">
-          <span class="fa fa-bars"></span>
-        </label>
- 
-        <input type="checkbox" id="btn" />
- 
-        <ul>
-          <li><a href="#">Home</a></li>
- 
+    <nav class="navbar">
+      <div class="logo">Gaurav Shirke</div>
+
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+
+      <input type="checkbox" id="btn" style="display: none;" />
+
+      <ul>
+        <li><a  href="#home">&nbsp;&nbsp; Home</a></li>
+
+        <li>
+          <label  for="btn-1" class="show"><a  href="#about">About</a></label>
+          <a  href="#about">&nbsp;&nbsp; About</a>
+          <!-- <input type="checkbox" id="btn-1" /> -->
+         
+          </li>
+
           <li>
-            <label for="btn-1" class="show">Features+</label>
-            <a href="#">Features</a>
-            <input type="checkbox" id="btn-1" />
-            <ul>
-              <li><a href="#">Feature 1</a></li>
-              <li><a href="#">Feature 2</a></li>
-              <li><a href="#">Feature 3</a></li>
-            </ul>
-            </li>
- 
-            <li>
-              <label for="btn-2" class="show">Services+
-              </label>
-              <a href="#">Services</a>
-              <input type="checkbox" id="btn-2" />
-              <ul>
-                <li><a href="#">Service 1</a></li>
-                <li><a href="#">Service 2</a></li>
-                <li>
-                  <label for="btn-3" class="show">More+
-                  </label>
-                  <a href="#">More <span class="fa fa-plus"></span></a>
-                  <input type="checkbox" id="btn-3" />
-                  <ul>
-                   <li><a href="#">Submenu 1</a></li>
-                   <li><a href="#">Submenu 2</a></li>
-                   <li><a href="#">Submenu 3</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
- 
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+            <label  for="btn-2" class="show"><a  href="#skills">Skills</a>
+            </label>
+            <a  href="#skills">&nbsp;&nbsp; Skills</a>
+            <!-- <input type="checkbox" id="btn-2" /> -->
+           
+          </li>
+
+          <li><a  href="#project">&nbsp;&nbsp; Project</a></li>
+          <li><a href="#statistics">&nbsp;&nbsp; Statistics</a></li>
+          <li><a  href="#contact">&nbsp;&nbsp; Contact</a></li>
+          
+          <li><a onclick="openNewWindow()" target="_blank" href="/assets/fw21_0985-Gaurav-Shirke.pdf" download="fw21_0985-Gaurav-Shirke">&nbsp;&nbsp;Resume</a> </li>
+      </ul>
+    </nav>
     
-
-    <div id="home">
+<section id="#home">
+  <div id="home">
       
-       <div id="self">
-        <p style="font-size: 27px; font-weight: lighter; ">Hello, I am </p>
-        <p style="font-size: 60px; font-weight: 510;">Java Developer</p>
-        <a class="button"  target="_blank" href="https://drive.google.com/file/d/1Nfb2VY46aoj-LEs_8s7z7OEdXuR7_0T7/view?usp=sharing" download="jhgasd78">Resume</a> 
-       </div>
-        
+    <div id="self">
+     <p class="p1" ">Hello, I am </p>
+     <p class="p2">Java Developer</p>
+     <a class="button" onclick="openNewWindow()" target="_blank" href="/assets/fw21_0985-Gaurav-Shirke.pdf" download="fw21_0985-Gaurav-Shirke">Resume</a> 
     </div>
-
-
- <div id="about">
-    <p >About me</p>
-
-    <div id="ab_in">
-        <img src="https://i.ibb.co/zmYL1b2/IMG-20220528-190232.jpg" alt="IMG-20220528-190232" >
-
-        <div id="info">
-            <h2>I am Gaurav Shirke, | <span class="typing"></span> |</h2>
-            <p >An enthusiastic and ambitious Java Backend
-                Developer, a lifelong learner, skilled in
-                Backend web Development. Knowledge of
-                Core Java and Spring Boot. Problem-solving
-                mindset and the ability to perform well in
-                collaboration. 1200+ hours of coding.
-                Looking forward to working as an
-                accountable and competent employee in an
-                exciting tech company</p>
-        </div>
-    </div>
-
+     
  </div>
+</section>
+   
+<section id="#about">
+  
+ <div id="about">
+  <p >About me</p>
 
-<div id="skills">
-    <p id="title" style="padding-top: 90px;" >My Skills</p>
+  <div id="ab_in">
+      <img src="/assets/Shirke Gaurav.jpg" alt="IMG-20220528-190232" >
+
+      <div id="info">
+          <h2>I am Gaurav Shirke, | <span class="typing"></span> |</h2>
+          <p >An enthusiastic and ambitious Java Backend
+              Developer, a lifelong learner, skilled in
+              Backend web Development. Knowledge of
+              Core Java and Spring Boot. Problem-solving
+              mindset and the ability to perform well in
+              collaboration. 1200+ hours of coding.
+              Looking forward to working as an
+              accountable and competent employee in an
+              exciting tech company</p>
+      </div>
+  </div>
+
+</div>
+</section>
+
+<section id="#skills">
+  <div id="skills">
+    <p id="title" " >My Skills</p>
     <div>
       <img src="https://www.vectorlogo.zone/logos/w3_html5/w3_html5-ar21.svg" alt="">
       <img src="https://www.vectorlogo.zone/logos/w3_css/w3_css-ar21.svg" alt="">
@@ -141,122 +130,204 @@
 </div>
 
 
-<div id="project">
-  <p id="title" style="padding-top: 60px; color: black;">Projects</p>
-    <div id="container">
-        <div>
-            <img src="https://i.ibb.co/dLL8VFJ/Screenshot-73.png" alt="Screenshot-73" border="0">
-            <div class="pro_info">
-            <h3>Go Shop</h3>
-            <p>This project is clone of Relience Digital website. This is ecomerce website where you can buy electronic
-                products, Mobile phones and Home appliences. collaborative project of 4 membered team</p>
-            <p><b> TechStack:</b> <i>JavaScript, HTML, CSS</i> </p>
-            <div>
-                <a target="_blank" href="https://github.com/GauravShirkeGS/ordinary-finger-7814"><div class="pro">Git Repo</div></a>
-                <a target="_blank" href="https://ubiquitous-semolina-4f8038.netlify.app/"><div class="pro">Live Site</div></a>
-            </div>
-        </div>
-        </div>
-        <div>
-            <img src="https://i.ibb.co/7kxwMYL/orbitz-project.png" alt="orbitz-project" border="0">
-            <div  class="pro_info">
-            <h3>Orbitz clone</h3>
-            <p>This is Tours and Travelles ecommerce website where you can book hotels, rent cars, flyight tickets etc.
-               Individual project completed in span of 6 days.</p>
-            <p><b> TechStack:</b> <i>JavaScript, HTML, CSS</i></p>
-            <div>
-                <a target="_blank" href="https://github.com/GauravShirkeGS/meaty-desire-2185"><div class="pro">Git Repo</div></a>
-                <a target="_blank" href="https://glistening-biscuit-f379fe.netlify.app/web_101_project.html"><div class="pro">Live Site</div></a>
-            </div>
-           </div>
-        </div>
-        <div>
-            <img src="https://i.ibb.co/YhD66Jz/Screenshot-75.png" alt="Screenshot-75" border="0">
-            <div  class="pro_info">
-            <h3>TenderSet</h3>
-            <p>This is Tender Management System Application Where you can login as Administrator or vendor.
-                This application store all tender information, vendor data safe and easily retrival manner.
-            </p>
-            <p> <b> TechStack:</b> <i>Java, MySQL, jdbc</i></p>
-            <div>
-                <a target="_blank" href="https://github.com/GauravShirkeGS/murky-boundary-2383"><div class="pro">Git Repo</div></a>
-               <a target="_blank" href=""><div class="pro">Live Site</div></a> 
-            </div>
-        </div>
-        </div>
-
+<div id="skills">
+  <p id="title"  >My Tools</p>
+  <div id="tools_icon">
+    <div>
+      <img src="/assets/eclips.jpg" alt="">
+      <h3>Eclips</h3>
     </div>
 
+    <div>
+      <img src="/assets/github.jpg" alt="">
+      <h3>Github</h3>
+    </div>
+   
+    <div>
+      <img src="/assets/Intelij_icon.jpg" alt="">
+      <h3>IntelliJ</h3>
+    </div>
+
+    <div>
+      <img src="/assets/mysql_png.png" alt="">
+      <h3>MySQL</h3>
+    </div>
+    
+    <div>
+      <img src="/assets/postman_icon.jpg" alt="">
+      <h3>Postman</h3>
+    </div>
+    
+    <div>
+      <img src="/assets/Swaggwe-ui.jpg" alt="">
+      <h3>Swagger</h3>
+    </div>
+    <div>
+      <img src="/assets/VS-code.jpg" alt="">
+      <h3>VS-code</h3>
+    </div>
+   
+  </div>
 </div>
+</section>
 
 
-<div id="contact" style="color: white;">
 
-    <p id="title" style="padding-top: 90px;">Contact me</p>
 
-   <div id="con-container">  
-
-    <div class="links">
-      <p>Get in touch</p>
-      <p style="line-height: 20px;">You can reach me through below contacts. You have any work where I can add some value and help you in any way then please do contact me.</p>
-      
-      <div class="con_icons">
-       <div>
-        <a href="mailto:shirkegauerav611@gmail.com"> <i class="fas fa-envelope"></i></a>
-
-        <a class="space" href="mailto:shirkegaurav611@gmail.com"> shirkegaurav611@gmail.com</i></a>
-        
-       </div>
-
-       <div>
-        <a href="https://www.linkedin.com/in/gaurav-shirke-897ba9228/"> <i class="fab fa-linkedin"></i></a>
-
-        <a class="space"href="https://www.linkedin.com/in/gaurav-shirke-897ba9228/"> Linkedin</i></a>
-        
-       </div>
-
-       <div>
-        <a href="https://github.com/GauravShirkeGS"> <i class="fab fa-github"></i></a>
-
-        <a class="space"href="https://github.com/GauravShirkeGS"> Github</i></a>
-        
-       </div>
-
-       <div class="last_div">
-        <i class="fa-solid fa-phone"></i>
-
-        <div class="space">+91 9588693140</div>
-        
-       </div>
-       
-
+<section id="#project">
+  <div id="project">
+    <p id="title" style="padding-top: 60px; color: black;">Projects</p>
+      <div id="container">
+          <div>
+              <img src="https://i.ibb.co/dLL8VFJ/Screenshot-73.png" alt="Screenshot-73" border="0">
+              <div class="pro_info">
+              <h3>Go Shop</h3>
+              <p>This project is clone of Relience Digital website. This is ecomerce website where you can buy electronic
+                  products, Mobile phones and Home appliences. collaborative project of 4 membered team</p>
+              <p><b> TechStack:</b> <i>JavaScript, HTML, CSS</i> </p>
+              <div>
+                  <a target="_blank" href="https://github.com/GauravShirkeGS/ordinary-finger-7814"><div class="pro">Git Repo</div></a>
+                  <a target="_blank" href="https://ubiquitous-semolina-4f8038.netlify.app/"><div class="pro">Live Site</div></a>
+              </div>
+          </div>
+          </div>
+          <div>
+              <img src="https://i.ibb.co/7kxwMYL/orbitz-project.png" alt="orbitz-project" border="0">
+              <div  class="pro_info">
+              <h3>Orbitz clone</h3>
+              <p>This is Tours and Travelles ecommerce website where you can book hotels, rent cars, flyight tickets etc.
+                 Individual project completed in span of 6 days.</p>
+              <p><b> TechStack:</b> <i>JavaScript, HTML, CSS</i></p>
+              <div>
+                  <a target="_blank" href="https://github.com/GauravShirkeGS/meaty-desire-2185"><div class="pro">Git Repo</div></a>
+                  <a target="_blank" href="https://glistening-biscuit-f379fe.netlify.app/web_101_project.html"><div class="pro">Live Site</div></a>
+              </div>
+             </div>
+          </div>
+          <div>
+              <img src="https://i.ibb.co/YhD66Jz/Screenshot-75.png" alt="Screenshot-75" border="0">
+              <div  class="pro_info">
+              <h3>TenderSet</h3>
+              <p>This is Tender Management System Application Where you can login as Administrator or vendor.
+                  This application store all tender information, vendor data safe and easily retrival manner.
+              </p>
+              <p> <b> TechStack:</b> <i>Java, MySQL, jdbc</i></p>
+              <div>
+                  <a target="_blank" href="https://github.com/GauravShirkeGS/murky-boundary-2383"><div class="pro">Git Repo</div></a>
+                 <a target="_blank" href=""><div class="pro">Live Site</div></a> 
+              </div>
+          </div>
+          </div>
+  
       </div>
-      
+  
+  </div>
+  
+</section>
+
+ <!-- statastics section  -->
+ <section id="#statistics">
+  <section class="git_hub_stats_section" id="statistics">
+    <h2 id="title"  data-aos="fade-down">Statistics</h2>
+    <div class="cal"><div class="calendar">
+        Loading the data just for you.
+    </div></div>
+    
+    <div class="git-stats">
+      <img src="https://camo.githubusercontent.com/2042a75998bda3aa5c599abdafa7488a242231425b7e16811a2b362afc254ab9/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170693f757365726e616d653d476175726176536869726b654753267468656d653d6461726b26686964655f626f726465723d66616c736526696e636c7564655f616c6c5f636f6d6d6974733d66616c736526636f756e745f707269766174653d66616c7365">
+      <img src="https://camo.githubusercontent.com/47e0aa9612f3c3787edfab1ff5f66410b4fbb3f84a80b56f2c9b3fd1b8ca2053/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d476175726176536869726b654753267468656d653d6461726b26686964655f626f726465723d66616c7365" alt="">
     </div>
+  </section>
+ </section>
+ 
 
+  <section id="#contact">
+    <div id="contact" style="color: white;">
 
-
-    <div id="msg">
-        <p>Message me</p>
-     
-        <div class="grid">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="email">
-            <input class="a" type="text" placeholder="subject">
-            <textarea class="a" cols="30" rows="10" name="message" placeholder="message.." required=""></textarea>
+      <p id="title" style="padding-top: 90px;">Contact me</p>
+  
+     <div id="con-container">  
+  
+      <div class="links">
+        <p>Get in touch</p>
+        <p style="line-height: 20px;">You can reach me through below contacts. You have any work where I can add some value and help you in any way then please do contact me.</p>
+        
+        <div class="con_icons">
+         <div>
+         
+  
+          <a class="space" href="mailto:shirkegaurav611@gmail.com"> <i class="fas fa-envelope"></i> <span>&nbsp;</span> shirkegaurav611@gmail.com</i></a>
           
+         </div>
+  
+         <div>
+          <a href="https://www.linkedin.com/in/gaurav-shirke-897ba9228/"> <i class="fab fa-linkedin"></i></a>
+  
+          <a class="space"href="https://www.linkedin.com/in/gaurav-shirke-897ba9228/">Linkedin</i></a>
+          
+         </div>
+  
+         <div>
+          <a href="https://github.com/GauravShirkeGS"> <i class="fab fa-github"></i></a>
+  
+          <a class="space"href="https://github.com/GauravShirkeGS">Github</i></a>
+          
+         </div>
+  
+         <div class="last_div">
+          <i class="fa-solid fa-phone"></i>
+  
+          <div class="space">+91 9588693140</div>
+          
+         </div>
+         
+  
         </div>
+        
+      </div>
+  
+  
+  
+      <div id="msg">
+          <p>Message me</p>
+       
+          <div class="grid">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="email">
+              <input class="a" type="text" placeholder="subject">
+              <textarea class="a" cols="30" rows="10" name="message" placeholder="message.." required=""></textarea>
+            
+          </div>
+  
+          <button class="button">Send message</button>
+  
+      </div>
+  
+      </div>
+  
+  </div>
+  </section>
 
-        <button class="button">Send message</button>
-
-    </div>
-
-    </div>
-
-</div>
 
 </body>
 <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script src="./index.js"></script>
+
+  <!-- // Git hub calender -->
+  <script
+  src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js">
+</script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"
+/>
+<script>
+    GitHubCalendar(".calendar", "GauravShirkeGS");
+    GitHubCalendar(".calendar", "GauravShirkeGS", {
+       proxy (username) {
+         return fetch(`https://your-proxy.com/github?user=${username}`)
+       }
+    }).then(r => r.text())
+</script>
 </html>
 
