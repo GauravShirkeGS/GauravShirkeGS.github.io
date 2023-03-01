@@ -394,8 +394,8 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 #skills>div>img,#skills>div>div>img{
-    width: 170px;
-    height: 140px;
+    width: 80%;
+    height: 80%;
     background-color: white;
     border-top-left-radius: 32px;
     border-bottom-right-radius: 32px;
@@ -568,7 +568,7 @@ a{
 }
 
 #con-container{
-    width: 86%;
+    width: 90%;
     margin: auto;
     display: flex;
     gap: 50px;
@@ -623,8 +623,9 @@ align-items: center;
     margin: auto;
 }
 .grid{
+    width: 100%;
     display: grid;
-    /* border: 1px solid red; */
+    border: 1px solid red;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(4, 30px);
     gap: 45px;
@@ -632,6 +633,7 @@ align-items: center;
 }
 .grid input{
     height: 50px;
+    width: 100%;
     border-top-left-radius: 12px;
     border-bottom-right-radius: 12px;
     padding-left: 15px;
@@ -740,7 +742,7 @@ align-items: center;
 }
 
 #skills>div{
-    width: 70%;
+    width: 80%;
     /* border: 1px solid; */
     /* border: 2px solid red; */
     height: fit-content;
@@ -749,6 +751,10 @@ align-items: center;
      gap: 60px;
     margin-top: 160px;
     grid-template-columns:repeat(3,1fr);
+}
+#skills>div>img{
+    width: 150px;
+    height: 150px;
 }
 #statistics{
     width: 960px;
@@ -899,6 +905,7 @@ align-items: center;
 #skills>div{
     display: grid;
     gap: 30px;
+    margin: auto;
 /* border: 1px solid red; */
    grid-template-columns:repeat(2,1fr);
   margin-top: 40px;
