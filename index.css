@@ -398,8 +398,8 @@ font-family: Arial, Helvetica, sans-serif;
     width: 80%;
     height: 80%;
     background-color: white;
-    border-top-left-radius: 32px;
-    border-bottom-right-radius: 32px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 } 
 
 #tools_icon>div{
